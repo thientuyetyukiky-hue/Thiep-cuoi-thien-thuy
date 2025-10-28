@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiệp cưới</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Mea+Culpa&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/src/style.css">
+    </head>
+
+    <body>
+        <div class="thiep-cuoi">
+            <p style="z-index: 2;">NHÀ CÓ HỶ</p>
+            <div class="song-hy">
+                <img src="/images/song-hy.png" class="hy"/>
+            </div>
+            <h1>Trần Thiên & Thanh Thủy</h1>
+            <div>Chủ Nhật - 09h00</div>
+            <div>05.04.2026</div>
+            <div>
+                <img src="/images/gallery.jpg" alt="Ảnh bìa thiệp cưới" class="anh-bia">
+            </div>
+
+            <!-- ---------- Mở đầu thiệp ---------- -->
+            <section class="mo-dau">
+                <div class="bo-me">
+                    <div class="nha-gai">
+                        <h3>NHÀ GÁI</h3>
+                        <div>Ông: Đỗ Doãn Sơn <br/>Bà: Nông Thị Hằng</div>
+                    </div>
+                    <div class="nha-trai">
+                        <h3>NHÀ TRAI</h3>
+                        <div>Ông: Trần Văn Phú <br/>Bà: Trần Thị Tuyết</div>
+                    </div>
+                </div>
+
+                <div class="moi">
+                    <div class="noi-dung-moi">
+                        <p>Trân trọng thông báo LỄ THÀNH HÔN của</p>
+                        <h1>Trần Thiên <br/> &<br/>Thanh Thủy</h1>
+                </div>
+
+                <div>
+                    <img src="/images/anh-ngang.jpg" alt="Ảnh ngang" class="anh-ngang">
+                </div>
+            </section>
+
+            <!-- ---------- Thông tin lễ cưới ---------- -->
+            <section class="thong-tin">
+                <div class="khach">
+                    <p>Trân trọng kính mời</p>
+                    <p><span class="ten-khach">Bạn Thảo</span></p>      <!--Tên khách sẽ được thay thế bằng code Node.js khi tạo file-->
+                </div>
+                <!-- Ba ảnh -->
+                <section class="ba-anh">
+                    <img src="/images/gallery1.jpg" alt="Ảnh 1" class="anh1">
+                    <img src="/images/gallery2.jpg" alt="Ảnh 2" class="anh2">
+                    <img src="/images/gallery3.jpg" alt="Ảnh 3" class="anh3">
+                </section>
+
+                <p>Tới dự bữa cơm thân mật cùng gia đình vào lúc:</p>
+                <p style="color: #8d0000">LỄ VU QUY</p>
+                <div class="thoi-gian">
+                    <div class="day">Chủ Nhật</div>
+                    <div class="time">09 giờ 00<br/><span class="date">05</span>Tháng 4</div>
+                    <div class="year">Năm 2026</div>
+                    <p>(Tức ngày 18 tháng 02 năm Bính Ngọ)</p>
+                </div>
+                <div class="dia-diem">
+                    <p>Tại nhà hàng Tiệc Cưới ABC</p>
+                    <p>Địa chỉ: Số 123, Đường XYZ, Quận 1, TP.HCM</p>
+                </div>
+
+                <!--<p style="color: #8d0000">LỄ THÀNH HÔN</p>
+                <div class="thoi-gian2">
+                    <div class="day2">Chủ Nhật</div>
+                    <div class="time2">09 giờ 00<span class="date2">05</span>Tháng 4</div>
+                    <div class="year2">Năm 2026</div>
+                    <p>(Tức ngày 18 tháng 02 năm Bính Ngọ)</p>
+                </div>-->
+            </section>
+
+            <!-- ---------- Xác nhận tham dự ---------- -->
+             <section class="confirm-section">
+                <h2 class="title">Xác nhận tham dự</h2>
+                <div>Hãy xác nhận sự có mặt của bạn để chúng mình chuẩn bị đón tiếp một cách chu đáo nhất nhé.
+                    <br/>Trân thành cảm ơn!
+                </div>
+                <form class="confirm-form" id="rsvpForm">
+                    <label for="guest-name">Tên của bạn</label>
+                    <input type="text" id="guest-name" name="ten" placeholder="Nhập tên..." required>
+
+                    <div>Bạn sẽ tham dự chứ?</div>
+                    <div class="radio-group">
+                        <label><input type="radio" name="thamdu" value="Có" required> Tôi sẽ tham dự</label>
+                        <label><input type="radio" name="thamdu" value="Không"> Rất tiếc không thể tham dự</label>
+                    </div>
+
+                    <label for="message">Lời chúc</label>
+                    <textarea id="message" name="loichuc" rows="4" placeholder="Gửi đôi uyên ương vài lời yêu thương..."></textarea>
+                    <section class="hop-mung-cuoi">
+                        <div class="qua-img" alt="Hộp quà mừng" id="openPopup">Gửi mừng cưới</div>
+                    </section>
+                    <button type="submit" class="submit-btn">Gửi xác nhận</button>
+                    <p id="status"></p>                    
+                </form>
+
+             </section>
+
+             
+
+
+            <!-- ---------- Album ảnh cưới ---------- -->
+            <section class="album-anh">
+                <h2>Album Ảnh Cưới</h2>
+                <div class="anh-cuoi">
+                    <img src="/images/gallery1.jpg" alt="Ảnh cưới 1" class="wedding1">
+                    <img src="/images/gallery2.jpg" alt="Ảnh cưới 2" class="wedding2">
+                </div>
+                <div class="anh-cuoi2">
+                    <img src="/images/gallery3.jpg" alt="Ảnh cưới 3" class="wedding3">
+                    <img src="/images/gallery4.jpg" alt="Ảnh cưới 4" class="wedding4">
+                </div>
+                <div class="anh-cuoi3">
+                    <img src="/images/gallery1.jpg" alt="Ảnh cưới 1" class="wedding5">
+                    <img src="/images/gallery2.jpg" alt="Ảnh cưới 2" class="wedding6">
+                </div>
+                <div class="anh-cuoi4">
+                    <img src="/images/gallery3.jpg" alt="Ảnh cưới 3" class="wedding7">
+                    <img src="/images/gallery4.jpg" alt="Ảnh cưới 4" class="wedding8">
+                </div>
+                <div class="thankyou-container">
+                    <img src="/images/gallery.jpg" alt="Cảm ơn" class="thankyou">
+                    <div><span style="font-size: 40px; padding: 10px;">Thank you!</span><br/>Rất hân hạnh được đón tiếp!</div>
+                </div>
+            </section>
+
+            <!-- Popup -->
+            <div class="popup-overlay" id="popup">
+                <div class="popup-content">
+                    <h2>Hộp Quà Yêu Thương</h2>
+                    <p>Quét QR code để gửi yêu thương trực tiếp tới:</p>
+
+                    <div class="qr-container">
+                        <div class="qr-card bride">
+                            <h3>Cô dâu</h3>
+                            <div class="qr-box bride"><img src="/images/qr-codau.png" class="qr"/></div>
+                            <p>Đỗ Thị Thanh Thủy</p>
+                            <p>Agribank</p>
+                            <p>123456789</p>
+                        </div>
+
+                        <div class="qr-card groom">
+                            <h3>Chú rể</h3>
+                            <div class="qr-box groom"><img src="/images/qr-chure.png" class="qr groom"/></div>
+                            <p>Trần Quốc Thiên</p>
+                            <p>TPBANK</p>
+                            <p>123456789</p>
+                        </div>
+                    </div>
+
+                    <button class="close-btn" id="closePopup">Đóng</button>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <script src="/src/script.js"></script>
+    </body>
+</html>
